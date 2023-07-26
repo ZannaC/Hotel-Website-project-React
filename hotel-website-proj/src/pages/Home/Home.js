@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import BookNow from "./components/BookNow";
+import BookNow from "../../components/BookNow";
 import "../../index.css";
 
 const Home = () => {

@@ -1,13 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat&display=swap");
 
-body {
+* {
   margin: 0;
-  font-family: "Lato", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  color: black;
+  padding: 0;
+  border: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+* li:last-child {
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(20, 39, 74, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 120rem;
+  margin: 0rem auto;
 }

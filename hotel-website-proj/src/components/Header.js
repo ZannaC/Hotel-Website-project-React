@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../assets/images/LuxuryHotels.png";
+import label from "../assets/images/LuxuryHotels.png";
 import NavBar from "./NavBar";
+import HeaderStyle from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div className="navBar">
-      <div className="logo">
-        <img src={logo} alt="Luxury Hotels" />
-      </div>
+    <div className={HeaderStyle.header}>
+      <img src={label} alt="Luxury Hotels" />
+
       <NavBar />
     </div>
   );
