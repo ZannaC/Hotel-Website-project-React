@@ -1,13 +1,14 @@
 .container {
-  max-width: 93.75rem;
-  margin: 0px auto;
+  width: 1500px;
+  margin: 0 auto;
 
   .bookNow {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 342px;
-    // padding-left: 213px;
+    padding-top: 193px;
+    color: rgba(255, 255, 255, 1);
+
     h1 {
       font-size: 154px;
     }
@@ -24,13 +25,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
     padding-top: 108px;
-
-    button {
-      border: none;
-      background-color: transparent;
-      padding: 0;
-    }
 
     .btnBookNow {
       border: none;
@@ -50,13 +46,13 @@
     }
 
     .btnScroll {
-      padding-top: 80px;
       border: none;
       background-color: transparent;
       padding: 0;
       cursor: pointer;
 
       img {
+        padding-top: 80px;
         width: 79px;
         height: 106px;
         max-width: 100%;

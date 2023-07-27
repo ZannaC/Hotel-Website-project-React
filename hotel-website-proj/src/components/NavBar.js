@@ -5,7 +5,7 @@ import NavBarStyle from "./NavBar.module.scss";
 const NavBar = () => {
   return (
     <div className={NavBarStyle.navbarMenu}>
-      <ul className={NavBarStyle.navbarMenu}>
+      <ul>
         <li>
           <Link to="/home">Home</Link>
         </li>

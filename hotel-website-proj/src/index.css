@@ -1,3 +1,4 @@
+@import-normalize;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat&display=swap");
 
 * {
@@ -24,13 +25,15 @@ li {
   font-size: 25px;
   color: rgba(20, 39, 74, 1);
   background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(229 229 153); */
 }
 
 .wrapper {
-  overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   min-height: 100%;
-  max-width: 120rem;
+  max-width: 1920px;
   margin: 0rem auto;
 }

@@ -1,18 +1,21 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 10.9%;
-  padding-left: 10.9%;
-  max-width: 120rem;
+.container {
+  width: 1500px;
+  height: 149px;
+  margin: 0 auto;
 
-  img {
-    width: 256px;
-    height: 149px;
-    max-width: 100%;
-    @media (max-width: 768px) {
-      max-width: 50%;
-      height: 50%;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 256px;
+      max-height: 149px;
+      max-width: 100%;
+      @media (max-width: 48rem) {
+        max-width: 50%;
+        height: 50%;
+      }
     }
   }
 }
