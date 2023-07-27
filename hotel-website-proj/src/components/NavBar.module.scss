@@ -1,0 +1,27 @@
+.navbarMenu {
+  display: flex;
+  align-items: center;
+
+  li {
+    float: left;
+    list-style: none;
+    white-space: nowrap;
+    padding-right: 88px;
+    @media (max-width: 768px) {
+      padding-right: 24px;
+    }
+
+    &:last-child {
+      padding: 0;
+    }
+
+    a {
+      font-weight: 700;
+      // color: rgb(223, 140, 140);
+      color: rgba(255, 255, 255, 1);
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
