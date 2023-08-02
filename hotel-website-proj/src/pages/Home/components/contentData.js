@@ -1,10 +1,7 @@
-import React from "react";
-import PageContentOneBlock from "../components/PageContentOneBlock";
 import room from "../../../assets/images/pages/Home/room.jpg";
 import beach from "../../../assets/images/pages/Home/beach.jpg";
-import ContentOneBlockStyle from "./PageContentOneBlock.module.scss";
 
-const Data = [
+const contentData = [
   {
     theme: "Luxury redefined",
     info: "Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.",
@@ -17,21 +14,4 @@ const Data = [
   },
 ];
 
-const ContentData = () => {
-  return (
-    <div>
-      <p className={ContentOneBlockStyle.title}>
-        All our room types are including complementary breakfast
-      </p>
-      {Data.map((data, index) => (
-        <PageContentOneBlock
-          key={index}
-          theme={data.theme}
-          info={data.info}
-          image={data.image}
-        />
-      ))}
-    </div>
-  );
-};
-export default ContentData;
+export default contentData;

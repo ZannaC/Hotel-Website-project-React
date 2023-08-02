@@ -2,7 +2,7 @@ import ExploreBtnStyle from "../../components/ui/ExploreBtn.module.scss";
 
 const ExploreBtn = () => {
   return (
-    <button type="submit" className={ExploreBtnStyle.exploreBtn}>
+    <button type="button" className={ExploreBtnStyle.exploreBtn}>
       <>EXPLORE</>
     </button>
   );

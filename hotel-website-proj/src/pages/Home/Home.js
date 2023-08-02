@@ -3,7 +3,8 @@ import BookNow from "../../components/BookNow";
 import "../../index.css";
 import HomeStyle from "./Home.module.scss";
 // import ExploreBtn from "../../components/ui/ExploreBtn";
-import ContentData from "../../pages/Home/components/PageContentData";
+import PageContent from "./components/PageContent";
+import Testimonials from "./components/Testimonials";
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
       <div className={HomeStyle.background}>
         <Header />
         <BookNow />
-        <ContentData />
+        <PageContent />
+        <Testimonials />
       </div>
     </div>
   );

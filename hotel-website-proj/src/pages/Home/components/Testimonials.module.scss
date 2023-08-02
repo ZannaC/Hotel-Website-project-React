@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 115px;
+  width: 1570px;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 26px;
+    font-size: 30px;
+  }
+
+  p {
+    padding-bottom: 19px;
+    font-size: 30px;
+  }
+
+  p.author {
+    font-size: 25px;
+    padding-bottom: 23px;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
