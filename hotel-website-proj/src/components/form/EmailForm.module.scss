@@ -18,9 +18,10 @@
 
 input.emailInput {
   box-sizing: border-box;
-  padding-top: 15px;
+  vertical-align: middle;
   padding-left: 26px;
   color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: transparent;
 }
@@ -32,8 +33,9 @@ input.emailInput {
   width: 80px;
   height: 52px;
   background-color: rgba(224, 185, 115, 1);
-  border-radius: 0px 6px 6px 0px;
-  font-size: 1.25rem;
+  border-radius: 0px 0.375rem 0.375rem 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   color: rgba(20, 39, 74, 1);
   cursor: pointer;
   &:hover {

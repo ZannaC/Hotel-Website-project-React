@@ -14,8 +14,7 @@ const Home = () => {
         <Header />
         <BookNow />
         <PageContent />
-        <Testimonials />
-        <Footer />
+        <Testimonials /> <Footer />
       </div>
     </div>
   );

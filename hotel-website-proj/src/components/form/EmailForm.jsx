@@ -18,7 +18,7 @@ function EmailForm() {
           <input
             className={EmailFormStyle.emailInput}
             type="text"
-            placeholder="Email address"
+            placeholder="Email Address"
             value={data.email}
             onChange={onChangeEmail}
             name="email-input"
