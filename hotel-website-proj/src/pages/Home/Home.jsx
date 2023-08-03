@@ -5,6 +5,7 @@ import HomeStyle from "./Home.module.scss";
 // import ExploreBtn from "../../components/ui/ExploreBtn";
 import PageContent from "./components/PageContent";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         <Header />
         <BookNow />
         <PageContent />
-        <Testimonials />
+        <Testimonials /> <Footer />
       </div>
     </div>
   );
