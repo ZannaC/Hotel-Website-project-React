@@ -1,0 +1,42 @@
+.emailBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  width: 80px;
+  height: 52px;
+  padding-top: 29.92px;
+  border: none;
+}
+
+.emailInput {
+  box-sizing: border-box;
+  width: 280px;
+  height: 52px;
+  border: 2px solid rgba(224, 185, 115, 1);
+}
+
+input.emailInput {
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 26px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.emailSubmitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 52px;
+  background-color: rgba(224, 185, 115, 1);
+  border-radius: 0px 6px 6px 0px;
+  font-size: 1.25rem;
+  color: rgba(20, 39, 74, 1);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

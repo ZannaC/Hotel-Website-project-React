@@ -1,5 +1,6 @@
 import React from "react";
 import { adressData, aboutUsData, socialMediaData } from "./footerData";
+import EmailForm from "../../../components/form/EmailForm";
 import FooterStyle from "./Footer.module.scss";
 
 const Footer = (props) => {
@@ -8,34 +9,48 @@ const Footer = (props) => {
       <div className={FooterStyle.infoBlock}>
         <div>
           <h3>LUXURY</h3>
-          <h3>HOTELS</h3>
-          {adressData.map((data, index) => (
-            <div key={index}>
-              <p>{data.adress}</p>
-              <p>{data.phone}</p>
-              <p>{data.email}</p>
-            </div>
-          ))}
+          <h6>HOTELS</h6>
+          <ul>
+            {adressData.map((data, index) => (
+              <li key={index}>
+                <p className={FooterStyle.adressBlock}>{data.adress}</p>
+                <p className={FooterStyle.adressBlock}>{data.phone}</p>
+                <p className={FooterStyle.adressBlock}>{data.email}</p>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div>
           {aboutUsData.map((data, index) => (
-            <div key={index}>
-              <p>{data.about}</p>
-              <p>{data.contact}</p>
-              <p>{data.terms}</p>
-            </div>
+            <ul key={index}>
+              <li>
+                <a href="#top">{data.about}</a>
+              </li>
+              <li>
+                <a href="#top">{data.contact}</a>
+              </li>
+              <li>
+                <a href="#top">{data.terms}</a>
+              </li>
+            </ul>
           ))}
         </div>
 
         <div>
           {socialMediaData.map((data, index) => (
-            <p>
-              <a href="#top" key={index}>
-                <img src={data.icon} alt="'"></img> {data.social}
-              </a>
-            </p>
+            <ul>
+              <li>
+                <a href="#top" key={index}>
+                  <img src={data.icon} alt="'"></img> {data.social}
+                </a>
+              </li>
+            </ul>
           ))}
+        </div>
+        <div>
+          <p className={FooterStyle.emailBlock}>Subscribe to our newsletter</p>
+          <EmailForm />
         </div>
       </div>
     </div>

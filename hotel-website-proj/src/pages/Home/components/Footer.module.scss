@@ -8,42 +8,56 @@ $textColor: rgba(255, 255, 255, 1);
   box-sizing: border-box;
 
   .infoBlock {
+    width: 1549px;
+    margin: 0 auto;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 144px;
     padding-bottom: 66px;
     justify-content: space-between;
     align-content: flex-start;
   }
 
-  h2 {
-    margin-bottom: 26px;
-    font-size: 30px;
+  h3 {
+    color: $textColor;
+
+    font-size: 25px;
+  }
+  h6 {
+    color: $textColor;
+    font-size: 9px;
+    padding-left: 24px;
+    padding-bottom: 22px;
   }
 
-  p {
+  p.adressBlock {
+    color: $textColor;
+    padding-bottom: 0px;
+    font-size: 14px;
+  }
+
+  p.emailBlock {
+    color: $textColor;
+    padding-bottom: 29px;
+    font-size: 16px;
+  }
+
+  li {
     color: $textColor;
     padding-bottom: 19px;
+    padding-right: 26px;
     font-size: 16px;
 
     a {
       color: $textColor;
-      padding-bottom: 19px;
       font-size: 16px;
-      vertical-align: center;
+      text-align: center;
+      cursor: pointer;
+      img {
+        padding-right: 10px;
+        vertical-align: middle;
+      }
     }
-  }
-
-  p.author {
-    font-size: 25px;
-    padding-bottom: 23px;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
