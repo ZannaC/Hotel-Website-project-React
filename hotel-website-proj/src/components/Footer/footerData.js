@@ -1,6 +1,6 @@
-import facebook from "../../../assets/icons/Facebook.svg";
-import twitter from "../../../assets/icons/Twitter.svg";
-import instagram from "../../../assets/icons/Instagram.svg";
+import facebook from "../../assets/icons/Facebook.svg";
+import twitter from "../../assets/icons/Twitter.svg";
+import instagram from "../../assets/icons/Instagram.svg";
 
 export const adressData = [
   {

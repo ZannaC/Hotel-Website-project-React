@@ -1,11 +1,12 @@
 import React from "react";
-import ExploreBtn from "../../../components/ui/ExploreBtn";
+import ExploreBtn from "../../../../components/ui/ExploreBtn/ExploreBtn";
 import ContentOneBlockStyle from "./PageContentOneBlock.module.scss";
 
-function PageContentOneBlock({ theme, info, image }) {
+const PageContentOneBlock = ({ theme, info, image }) => {
   const backgroundImageStyle = {
     backgroundImage: `url(${image})`,
   };
+
   return (
     <div className={ContentOneBlockStyle.container}>
       <div className={ContentOneBlockStyle.block}>
@@ -23,5 +24,5 @@ function PageContentOneBlock({ theme, info, image }) {
       </div>
     </div>
   );
-}
+};
 export default PageContentOneBlock;

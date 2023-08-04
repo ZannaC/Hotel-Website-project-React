@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import EmailFormStyle from "../form/EmailForm.module.scss";
 
-function EmailForm() {
+const EmailForm = () => {
   const [data, setData] = useState({ email: "" });
 
   const onChangeEmail = (event) => {
@@ -36,5 +36,5 @@ function EmailForm() {
       </div>
     </div>
   );
-}
+};
 export default EmailForm;

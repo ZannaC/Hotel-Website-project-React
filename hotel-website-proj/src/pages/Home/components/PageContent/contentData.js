@@ -1,5 +1,5 @@
-import room from "../../../assets/images/pages/Home/room.jpg";
-import beach from "../../../assets/images/pages/Home/beach.jpg";
+import room from "../../../../assets/images/pages/Home/room.jpg";
+import beach from "../../../../assets/images/pages/Home/beach.jpg";
 
 const contentData = [
   {
