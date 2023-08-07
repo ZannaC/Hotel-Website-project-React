@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lato:wght@300;700&f-top:83pxamily=Montserrat&display=swap");
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 83px;
+  font-size: 36px;
+}
+.container {
+  width: 1580px;
+  margin: 0 auto;
+
+  .block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 69px;
+
+    .blockInfo {
+      position: absolute;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      max-width: 100%;
+      // padding-left: 48.5px;
+      // padding-right: 63px;
+      line-height: 40px;
+      background-color: rgba(255, 255, 255, 1);
+      width: 684px;
+      height: 75px;
+
+      h2 {
+        font-family: "EB Garamond", serif;
+        font-size: 60px;
+        line-height: 72px;
+        color: rgba(20, 39, 74, 1);
+      }
+      p {
+        font-size: 25px;
+        padding-top: 12px;
+        padding-bottom: 30px;
+      }
+    }
+    .blockImage {
+      background-size: cover;
+      position: relative;
+      width: 1580px;
+      height: 1054px;
+    }
+  }
+}
