@@ -1,34 +1,49 @@
 .container {
+  box-sizing: border-box;
   width: 1500px;
-  margin: 0 auto;
+  // width: 1500px;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin-left: 11%;
+  // margin-right: 10.8%;
+  // margin: 0 auto;
 
   .bookNow {
+    // padding-left: 11%;
+    // box-sizing: border-box;
+    // width: 1500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: auto;
-    max-height: 328px;
-    padding-top: 193px;
+    // width: auto;
+    // max-height: 328px;
+    padding-top: 12.0625rem;
+    // padding-left: 213px;
     color: rgba(255, 255, 255, 1);
 
     h1 {
-      font-size: 154px;
+      font-size: 9.625rem;
     }
     h2 {
-      font-size: 60px;
+      font-size: 3.75rem;
     }
     h3 {
-      font-size: 50px;
+      font-size: 3.125rem;
     }
   }
 
   .btnScrollBlock {
+    // box-sizing: border-box;
+    // width: 1500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
     padding-top: 108px;
+    padding-bottom: 38px;
 
     .btnBookNow {
       border: none;
@@ -55,6 +70,7 @@
 
       img {
         padding-top: 80px;
+
         width: 79px;
         height: 106px;
         max-width: 100%;

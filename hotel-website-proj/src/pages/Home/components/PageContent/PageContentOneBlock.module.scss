@@ -1,53 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lato:wght@300;700&f-top:83pxamily=Montserrat&display=swap");
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 83px;
-  font-size: 36px;
-}
-.container {
-  width: 1570px;
-  margin: 0 auto;
+@import "../../../../index.module.scss";
 
-  .block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: auto;
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 69px;
+
+  .blockInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 48.5px;
+    padding-right: 5.2%;
+
+    h2 {
+      @include text-Garamond-dark-60;
+    }
+
+    h3 {
+      @include text-Montserrat-dark-25;
+      line-height: 2.5rem;
+      padding-top: 12px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .blockImage {
+    background-size: cover;
+    background-position: center;
     max-width: 100%;
-    margin-top: 69px;
-
-    .blockInfo {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-content: flex-start;
-      width: 563px;
-      height: auto;
-      max-width: 100%;
-      padding-left: 48.5px;
-      // padding-right: 63px;
-      line-height: 40px;
-
-      h2 {
-        font-family: "EB Garamond", serif;
-        font-size: 60px;
-        line-height: 72px;
-        color: rgba(20, 39, 74, 1);
-      }
-      p {
-        font-size: 25px;
-        padding-top: 12px;
-        padding-bottom: 30px;
-      }
-    }
-    .blockImage {
-      background-size: cover;
-      background-position: center;
-      width: 866px;
-      height: 487px;
-    }
+    height: auto;
   }
 }

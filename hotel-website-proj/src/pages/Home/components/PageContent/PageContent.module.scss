@@ -1,0 +1,17 @@
+@import "../../../../index.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1570px;
+  margin: 0 auto;
+
+  h2 {
+    @include flex-center;
+    @include text-Montserrat-dark-36;
+    margin-top: 83px;
+    font-size: 36px;
+  }
+}

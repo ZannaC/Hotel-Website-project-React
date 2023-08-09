@@ -22,19 +22,8 @@ const Testimonials = () => {
   return (
     <div className={TestimonialsStyle.container}>
       <h2>Testimonials</h2>
-
-      <div className={TestimonialsStyle.block}>
-        <p>{testimonialsData[currentTestimonialIndex].testimonials}</p>
-        <p className={TestimonialsStyle.author}>
-          {testimonialsData[currentTestimonialIndex].author}
-        </p>
-      </div>
-
-      {/* NOTE(only scroll without data array index control): <ScrollBtn
-        onScrollRight={handleScrollRight}
-        onScrollLeft={handleScrollLeft}
-  /> */}
-
+      <h3>{testimonialsData[currentTestimonialIndex].testimonials}</h3>
+      <h4>{testimonialsData[currentTestimonialIndex].author}</h4>
       <ScrollBtn
         onScrollRight={() => {
           if (currentTestimonialIndex === testimonialsData.length - 1) {
@@ -49,6 +38,10 @@ const Testimonials = () => {
           handleScrollLeft();
         }}
       />
+      {/* NOTE(only scroll without data array index control): <ScrollBtn
+        onScrollRight={handleScrollRight}
+        onScrollLeft={handleScrollLeft}
+  /> */}
     </div>
   );
 };

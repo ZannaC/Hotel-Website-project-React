@@ -1,24 +1,12 @@
 .background {
-  width: 100vw;
-  height: 67.5rem;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  max-width: 1920px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/images/pages/Home/HomePageBackground.jpg");
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-  }
-
+  z-index: 1;
+  box-sizing: border-box;
+  background-image: url("../../assets/images/pages/Home/HomePageBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(34, 103, 230, 0.5);
   &::after {
     content: "";
     position: absolute;

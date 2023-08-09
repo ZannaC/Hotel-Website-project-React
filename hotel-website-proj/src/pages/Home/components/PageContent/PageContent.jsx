@@ -1,13 +1,11 @@
 import React from "react";
 import PageContentOneBlock from "./PageContentOneBlock";
 import contentData from "./contentData";
-import ContentOneBlockStyle from "./PageContentOneBlock.module.scss";
+import PageContentStyle from "./PageContent.module.scss";
 
 const PageContent = () => (
-  <div>
-    <p className={ContentOneBlockStyle.title}>
-      All our room types are including complementary breakfast
-    </p>
+  <div className={PageContentStyle.container}>
+    <h2>All our room types are including complementary breakfast</h2>
     {contentData.map((data, index) => (
       <PageContentOneBlock
         key={index}

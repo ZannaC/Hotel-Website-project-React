@@ -1,17 +1,15 @@
+@import "../../../index.module.scss";
+
 .exploreBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 236px;
-  height: 63px;
+  @include flex-center;
+  width: 14.75rem;
+  height: 3.9375rem;
   max-width: 100%;
   border-radius: 0.62rem;
   border: none;
   background: rgba(224, 185, 115, 1);
-  // color: rgba(255, 255, 255, 1);
-  font-size: 20px;
-  // font-family: "Montserrat", sans-serif;
+  @include text-Montserrat-white-20;
+
   cursor: pointer;
 
   &:hover {

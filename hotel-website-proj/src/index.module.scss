@@ -1,5 +1,6 @@
 // @import-normalize;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Lato:wght@300;700&family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -28,6 +29,12 @@ $font-color-dark: rgba(20, 39, 74, 1);
 @mixin text-Garamond-dark-60 {
   font-family: $font-family-Garam;
   font-size: 60px;
+  color: $font-color-dark;
+}
+
+@mixin text-Montserrat-dark-36 {
+  font-family: $font-family-Mont;
+  font-size: 36px;
   color: $font-color-dark;
 }
 
@@ -61,6 +68,12 @@ $font-color-dark: rgba(20, 39, 74, 1);
   color: $font-color-white;
 }
 
+@mixin text-Montserrat-white-20 {
+  font-family: $font-family-Mont;
+  font-size: 20px;
+  color: $font-color-white;
+}
+
 @mixin text-Montserrat-white-16 {
   font-family: $font-family-Mont;
   font-size: 16px;
@@ -85,30 +98,39 @@ $font-color-dark: rgba(20, 39, 74, 1);
   align-items: center;
 }
 
-// :root {
-//   box-sizing: border-box;
-//   // font-family: "Montserrat", sans-serif;
-//   // font-weight: 400;
-//   // font-size: 25px;
-//   // color: rgba(20, 39, 74, 1);
-//   background-color: rgba(255, 255, 255, 1);
-//   /* background-color: rgba(229 229 153); */
-// }
-
-.wrapper {
+:root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   // flex-direction: column;
   min-height: 100%;
   max-width: 1920px;
-  margin: 0rem auto;
+  margin: 0 auto;
+  //   box-sizing: border-box;
+  //   // font-family: "Montserrat", sans-serif;
+  //   // font-weight: 400;
+  //   // font-size: 25px;
+  //   // color: rgba(20, 39, 74, 1);
+  //   background-color: rgba(255, 255, 255, 1);
+  //   /* background-color: rgba(229 229 153); */
 }
 
+// .wrapper {
+//   overflow: hidden;
+//   display: flex;
+//   // flex-direction: column;
+
+//   // flex-direction: column;
+//   min-height: 100%;
+//   max-width: 1920px;
+//   margin: 0rem auto;
+// }
+
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  color: rgba(20, 39, 74, 1);
+  // font-family: "Montserrat", sans-serif;
+  // font-weight: 400;
+  // font-size: 25px;
+  // color: rgba(20, 39, 74, 1);
   box-sizing: border-box;
 }

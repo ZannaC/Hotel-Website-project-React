@@ -8,20 +8,18 @@ const PageContentOneBlock = ({ theme, info, image }) => {
   };
 
   return (
-    <div className={ContentOneBlockStyle.container}>
-      <div className={ContentOneBlockStyle.block}>
-        <div className={ContentOneBlockStyle.blockInfo}>
-          <h2>{theme}</h2>
-          <p>{info}</p>
-          <form action="https://www.w3schools.com" target="blank">
-            <ExploreBtn />
-          </form>
-        </div>
-        <div
-          className={ContentOneBlockStyle.blockImage}
-          style={backgroundImageStyle}
-        ></div>
+    <div className={ContentOneBlockStyle.block}>
+      <div className={ContentOneBlockStyle.blockInfo}>
+        <h2>{theme}</h2>
+        <h3>{info}</h3>
+        <form action="https://www.w3schools.com" target="blank">
+          <ExploreBtn />
+        </form>
       </div>
+      <div
+        className={ContentOneBlockStyle.blockImage}
+        style={backgroundImageStyle}
+      ></div>
     </div>
   );
 };
