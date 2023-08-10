@@ -1,0 +1,18 @@
+@import "../../../index.module.scss";
+
+.addressBlock {
+  // max-width: 264px;
+  h2 {
+    @include text-Garamond-white-25;
+  }
+
+  h4 {
+    @include text-Garamond-white-9;
+    padding-left: 8.5%;
+    padding-bottom: 8.5%;
+  }
+
+  li h3 {
+    @include text-Montserrat-white-14;
+  }
+}

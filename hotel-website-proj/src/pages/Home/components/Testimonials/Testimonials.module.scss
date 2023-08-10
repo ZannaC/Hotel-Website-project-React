@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 115px;
+  padding-top: 6%;
   max-width: 1920px;
   margin: 0 auto;
 
@@ -15,12 +15,12 @@
 
   h3 {
     @include text-Montserrat-dark-30;
-    padding-top: 26px;
-    padding-bottom: 19px;
+    padding-top: 1.35%;
+    padding-bottom: 1%;
   }
 
   h4 {
     @include text-Montserrat-dark-25;
-    padding-bottom: 23px;
+    padding-bottom: 1.2%;
   }
 }

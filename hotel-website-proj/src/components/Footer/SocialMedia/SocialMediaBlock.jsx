@@ -1,8 +1,9 @@
 import React from "react";
 import { socialMediaData } from "./socialMediaData";
+import SocialMediaStyle from "./SocialMedia.module.scss";
 
 const SocialMediaBlock = (props) => (
-  <div>
+  <div className={SocialMediaStyle.socialMediaBlock}>
     {socialMediaData.map((data, index) => (
       <ul>
         <li>

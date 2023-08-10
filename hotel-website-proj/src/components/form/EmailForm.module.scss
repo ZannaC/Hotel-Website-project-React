@@ -1,18 +1,19 @@
+@import "../../index.module.scss";
+
 .emailBtn {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   box-sizing: border-box;
-  width: 80px;
-  height: 52px;
-  padding-top: 29.92px;
+  max-width: 80px;
+  max-height: 52px;
+  padding-top: 11%;
   border: none;
 }
 
 .emailInput {
-  box-sizing: border-box;
-  width: 280px;
-  height: 52px;
+  max-width: 280px;
+  max-height: 52px;
   border: 2px solid rgba(224, 185, 115, 1);
 }
 

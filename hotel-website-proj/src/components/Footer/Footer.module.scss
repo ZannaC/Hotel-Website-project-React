@@ -1,66 +1,20 @@
-$textColor: rgba(255, 255, 255, 1);
+@import "../../index.module.scss";
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   background-image: url("../../assets/images/pages/Home/footerBackground.png");
-  width: 1920px;
-  // margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
   background-repeat: no-repeat;
-  box-sizing: border-box;
+  background-position: center center;
 
   .infoBlock {
-    width: 1549px;
-    // margin: 0 auto;
-    box-sizing: border-box;
+    max-width: 1549px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 144px;
-    padding-bottom: 66px;
+    padding-top: 7.5%;
+    padding-bottom: 3.45%;
     justify-content: space-between;
-    align-content: flex-start;
-  }
-
-  h3 {
-    color: $textColor;
-
-    font-size: 25px;
-  }
-  h6 {
-    color: $textColor;
-    font-size: 9px;
-    padding-left: 24px;
-    padding-bottom: 22px;
-  }
-
-  p.adressBlock {
-    color: $textColor;
-    padding-bottom: 0px;
-    font-size: 14px;
-  }
-
-  p.emailBlock {
-    color: $textColor;
-    padding-bottom: 29px;
-    font-size: 16px;
-  }
-
-  li {
-    color: $textColor;
-    padding-bottom: 19px;
-    padding-right: 26px;
-    font-size: 16px;
-
-    a {
-      color: $textColor;
-      font-size: 16px;
-      text-align: center;
-      cursor: pointer;
-      img {
-        padding-right: 10px;
-        vertical-align: middle;
-      }
-    }
+    align-items: flex-start;
   }
 }

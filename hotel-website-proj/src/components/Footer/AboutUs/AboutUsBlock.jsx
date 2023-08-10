@@ -1,8 +1,9 @@
 import React from "react";
 import { aboutUsData } from "./aboutUsData";
+import AboutUsStyle from "./AboutUs.module.scss";
 
 const AboutUsBlock = (props) => (
-  <div>
+  <div className={AboutUsStyle.aboutUsBlock}>
     {aboutUsData.map((data, index) => (
       <ul key={index}>
         <li>

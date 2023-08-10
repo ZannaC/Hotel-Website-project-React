@@ -1,0 +1,11 @@
+@import "../../../index.module.scss";
+
+.aboutUsBlock {
+  li {
+    padding-bottom: 7.5%;
+  }
+
+  a {
+    @include text-Montserrat-white-16;
+  }
+}

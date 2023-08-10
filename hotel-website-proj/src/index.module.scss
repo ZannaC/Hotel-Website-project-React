@@ -1,4 +1,4 @@
-// @import-normalize;
+@use "scss-reset/reset";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Lato:wght@300;700&family=Montserrat&display=swap");
 
@@ -30,6 +30,18 @@ $font-color-dark: rgba(20, 39, 74, 1);
   font-family: $font-family-Garam;
   font-size: 60px;
   color: $font-color-dark;
+}
+
+@mixin text-Garamond-white-25 {
+  font-family: $font-family-Garam;
+  font-size: 25px;
+  color: $font-color-white;
+}
+
+@mixin text-Garamond-white-9 {
+  font-family: $font-family-Garam;
+  font-size: 9px;
+  color: $font-color-white;
 }
 
 @mixin text-Montserrat-dark-36 {
@@ -104,9 +116,9 @@ $font-color-dark: rgba(20, 39, 74, 1);
   align-items: center;
   justify-content: center;
   // flex-direction: column;
-  min-height: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  // min-height: 100%;
+  // max-width: 1920px;
+  // margin: 0 auto;
   //   box-sizing: border-box;
   //   // font-family: "Montserrat", sans-serif;
   //   // font-weight: 400;
@@ -119,10 +131,10 @@ $font-color-dark: rgba(20, 39, 74, 1);
 // .wrapper {
 //   overflow: hidden;
 //   display: flex;
-//   // flex-direction: column;
+//   flex-direction: column;
 
-//   // flex-direction: column;
-//   min-height: 100%;
+//   //   // flex-direction: column;
+//   //   min-height: 100%;
 //   max-width: 1920px;
 //   margin: 0rem auto;
 // }

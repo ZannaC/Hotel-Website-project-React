@@ -1,0 +1,13 @@
+@import "../../../index.module.scss";
+
+.socialMediaBlock {
+  ul {
+    padding-bottom: 7.5%;
+  }
+  li a {
+    @include text-Montserrat-white-16;
+  }
+  img {
+    padding-right: 10%;
+  }
+}
