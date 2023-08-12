@@ -1,25 +1,25 @@
 @import "../../index.module.scss";
 
-// .container {
-//   @include flex-center;
-//   max-width: 1500px;
-// height: auto;
-// margin: 0 0.3rem 0 0;
-
-.header {
+.container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
 
-  img {
-    max-width: 256px;
-    max-height: 149px;
+  .header {
+    position: relative;
     max-width: 100%;
-    padding-right: 28.2%;
-    @media (max-width: 768px) {
-      max-width: 50%;
-      height: 50%;
+
+    img {
+      box-sizing: content-box;
+      max-width: 16rem;
+      max-height: 9.3125rem;
+      max-width: 100%;
+      @media (max-width: 768px) {
+        max-width: 70%;
+        height: auto;
+      }
     }
   }
 }
-// }

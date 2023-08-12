@@ -1,0 +1,10 @@
+@import "../../../index.module.scss";
+
+.emailBlock {
+  padding-bottom: 1%;
+
+  p {
+    padding-bottom: 11%;
+    @include text-Montserrat-white-16;
+  }
+}

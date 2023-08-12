@@ -1,10 +1,10 @@
 import React from "react";
 import EmailForm from "../../form/EmailForm";
-import FooterStyle from "../Footer.module.scss";
+import EmailBlockStyle from "./EmailBlock.module.scss";
 
 const EmailBlock = (props) => (
-  <div>
-    <p className={FooterStyle.emailBlock}>Subscribe to our newsletter</p>
+  <div className={EmailBlockStyle.emailBlock}>
+    <p>Subscribe to our newsletter</p>
     <EmailForm />
   </div>
 );

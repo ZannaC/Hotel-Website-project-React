@@ -7,7 +7,8 @@ const Header = () => (
   <div className={HeaderStyle.container}>
     <div className={HeaderStyle.header}>
       <img src={label} alt="Luxury Hotels" />
-
+    </div>
+    <div>
       <NavBar />
     </div>
   </div>

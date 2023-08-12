@@ -9,9 +9,11 @@ const BookNow = () => (
       <h3>WELCOME TO</h3>
       <h1>LUXURY</h1>
       <h2>HOTELS</h2>
-      Book your stay and enjoy Luxury
-      <br />
-      redefined at the most affordable rates.
+      <h4>
+        Book your stay and enjoy Luxury
+        <br />
+        redefined at the most affordable rates.
+      </h4>
     </div>
     <div className={BookNowStyle.btnScrollBlock}>
       <button

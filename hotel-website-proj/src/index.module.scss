@@ -32,6 +32,12 @@ $font-color-dark: rgba(20, 39, 74, 1);
   color: $font-color-dark;
 }
 
+@mixin text-Garamond-white-154 {
+  font-family: $font-family-Garam;
+  font-size: 154px;
+  color: $font-color-white;
+}
+
 @mixin text-Garamond-white-25 {
   font-family: $font-family-Garam;
   font-size: 25px;
@@ -42,6 +48,12 @@ $font-color-dark: rgba(20, 39, 74, 1);
   font-family: $font-family-Garam;
   font-size: 9px;
   color: $font-color-white;
+}
+
+@mixin text-Montserrat-dark-36 {
+  font-family: $font-family-Mont;
+  font-size: 36px;
+  color: $font-color-dark;
 }
 
 @mixin text-Montserrat-dark-36 {
@@ -62,6 +74,12 @@ $font-color-dark: rgba(20, 39, 74, 1);
   color: $font-color-dark;
 }
 
+@mixin text-Montserrat-dark-16 {
+  font-family: $font-family-Mont;
+  font-size: 16px;
+  color: $font-color-dark;
+}
+
 @mixin text-Montserrat-white-154 {
   font-family: $font-family-Mont;
   font-size: 154px;
@@ -71,6 +89,12 @@ $font-color-dark: rgba(20, 39, 74, 1);
 @mixin text-Montserrat-white-60 {
   font-family: $font-family-Mont;
   font-size: 60px;
+  color: $font-color-white;
+}
+
+@mixin text-Montserrat-white-50 {
+  font-family: $font-family-Mont;
+  font-size: 50px;
   color: $font-color-white;
 }
 

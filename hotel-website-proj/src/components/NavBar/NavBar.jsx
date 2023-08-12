@@ -4,18 +4,26 @@ import NavBarStyle from "./NavBar.module.scss";
 
 const NavBar = () => (
   <div className={NavBarStyle.navbarMenu}>
-    <ul>
+    <ul className={NavBarStyle.navList}>
       <li>
-        <Link to="/home">Home</Link>
+        <Link to="/home" activeClassName={NavBarStyle.activeLink}>
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/facilities">Facilities</Link>
+        <Link to="/facilities" activeClassName={NavBarStyle.activeLink}>
+          Facilities
+        </Link>
       </li>
       <li>
-        <Link to="/rooms">Rooms</Link>
+        <Link to="/rooms" activeClassName={NavBarStyle.activeLink}>
+          Rooms
+        </Link>
       </li>
       <li>
-        <Link to="/contact-us">Contact Us</Link>
+        <Link to="/contact-us" activeClassName={NavBarStyle.activeLink}>
+          Contact Us
+        </Link>
       </li>
     </ul>
   </div>
