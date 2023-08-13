@@ -10,10 +10,10 @@ const Facilities = () => (
     <div className={FacilitiesStyle.background}>
       <Header />
       <BookNow />
-      <PageContent />
-      <Testimonials />
-      <Footer />
     </div>
+    <PageContent />
+    <Testimonials />
+    <Footer />
   </div>
 );
 

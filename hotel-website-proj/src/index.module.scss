@@ -59,6 +59,15 @@ $font-color-dark: rgba(20, 39, 74, 1);
   color: $font-color-white;
 }
 
+@mixin text-Montserrat-dark-48 {
+  font-family: $font-family-Mont;
+  font-size: 48px;
+  color: $font-color-dark;
+  @include breakpoint(md) {
+    font-size: 28px;
+  }
+}
+
 @mixin text-Montserrat-dark-36 {
   font-family: $font-family-Mont;
   font-size: 36px;
