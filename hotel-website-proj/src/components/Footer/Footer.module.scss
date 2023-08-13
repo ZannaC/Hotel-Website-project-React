@@ -11,11 +11,24 @@
 
   .infoBlock {
     max-width: 1549px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     padding-top: 7.5%;
     padding-bottom: 3.45%;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include breakpoint(sm) {
+      grid-template-columns: 1fr;
+      padding-top: 50%;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 30px;
+      ul {
+        padding-top: 1%;
+      }
+    }
   }
 }

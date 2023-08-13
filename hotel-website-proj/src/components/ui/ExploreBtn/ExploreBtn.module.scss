@@ -15,4 +15,8 @@
   &:hover {
     transform: scale(1.05);
   }
+
+  @include breakpoint(sm) {
+    max-width: 80%;
+  }
 }

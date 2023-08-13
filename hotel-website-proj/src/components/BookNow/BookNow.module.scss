@@ -44,6 +44,9 @@
     height: auto;
     max-width: 100%;
     transition: transform 0.2s ease-in-out;
+    @include breakpoint(sm) {
+      max-width: 80%;
+    }
   }
 
   &:hover img {
@@ -62,6 +65,9 @@
     height: auto;
     max-width: 100%;
     transition: transform 0.2s ease-in-out;
+    @include breakpoint(sm) {
+      max-width: 80%;
+    }
   }
 
   &:hover img {

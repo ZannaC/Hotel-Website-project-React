@@ -1,6 +1,9 @@
 @import "../../../index.module.scss";
 
 .emailBlock {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
   padding-bottom: 1%;
 
   p {
