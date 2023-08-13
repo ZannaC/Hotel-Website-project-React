@@ -1,12 +1,12 @@
 import React from "react";
 import PageContentOneBlock from "./PageContentOneBlock";
 import contentData from "./contentData";
-import ContentOneBlockStyle from "./PageContentOneBlock.module.scss";
+import PageContentStyle from "./PageContent.module.scss";
 
 const PageContent = () => (
-  <div>
+  <div className={PageContentStyle.container}>
     <h2>FACILITIES</h2>
-    <p className={ContentOneBlockStyle.title}>
+    <p>
       We want your stay at our lush hotel to be truly unforgettable. That is why
       we give special attention to all of your needs so that we can ensure an
       experience quite uniquw. Luxury hotels offers the perfect setting with
