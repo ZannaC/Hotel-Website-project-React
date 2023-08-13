@@ -19,6 +19,8 @@ li {
   padding: 0;
 }
 
+// font //
+
 $primary-color: #007bff;
 $font-family-Mont: "Montserrat", sans-serif;
 $font-family-Garam: "EB Garamond", serif;
@@ -122,6 +124,8 @@ $font-color-dark: rgba(20, 39, 74, 1);
   color: $font-color-white;
 }
 
+// flex //
+
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -133,6 +137,8 @@ $font-color-dark: rgba(20, 39, 74, 1);
   justify-content: space-between;
   align-items: center;
 }
+
+// screen sizes //
 
 :root {
   display: flex;
