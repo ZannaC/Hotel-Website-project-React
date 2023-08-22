@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header";
 import BookNow from "../../components/BookNow/BookNow";
 import FacilitiesStyle from "./Facilities.module.scss";
-import PageContent from "../Facilities/components/PageContent/PageContent";
+import PageContent from "../Facilities/components/FacilitiesPageContent/PageContent";
 import Testimonials from "../Home/components/Testimonials/Testimonials";
 import Footer from "../../components/Footer/Footer";
 
