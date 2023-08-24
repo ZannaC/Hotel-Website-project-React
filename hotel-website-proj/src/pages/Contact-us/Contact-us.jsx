@@ -7,12 +7,21 @@ const Contact = () => {
   const [surname, setSurname] = useState("Parker");
   const [email, setEmail] = useState("kate@example.com");
   const [address, setAddress] = useState("Abbey Road 45, London, UK");
-  const [password, setPassword] = useState("********");
+
+  const [existingPassword, setExistingPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const [nameEditing, setNameEditing] = useState(false);
   const [surnameEditing, setSurnameEditing] = useState(false);
   const [emailEditing, setEmailEditing] = useState(false);
   const [addressEditing, setAddressEditing] = useState(false);
   const [passwordEditing, setPasswordEditing] = useState(false);
+  const [newPasswordEditing, setNewPasswordEditing] = useState(false);
+  const [confirmPasswordEditing, setConfirmPasswordEditing] = useState(false);
+  const [existingPasswordError, setExistingPasswordError] = useState("");
+  const [newPasswordError, setNewPasswordError] = useState("");
+  const [confirmPasswordError, setConfirmPasswordError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleNameClick = () => {
@@ -35,22 +44,50 @@ const Contact = () => {
     setPasswordEditing(true);
   };
 
+  const handleNewPasswordClick = () => {
+    setNewPasswordEditing(true);
+  };
+
+  const handleConfirmPasswordClick = () => {
+    setConfirmPasswordEditing(true);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // data to a server for saving
-    // For now log the updated values
-    console.log("Updated Name:", name);
-    console.log("Updated Name:", surname);
-    console.log("Updated Email:", email);
-    console.log("Updated Address:", address);
-    console.log("Updated Password:", password);
+
+    setExistingPasswordError("");
+    setNewPasswordError("");
+    setConfirmPasswordError("");
+
+    if (existingPassword !== "333") {
+      setExistingPasswordError("Existing password doesn't match.");
+    }
+
+    if (newPassword === existingPassword) {
+      setNewPasswordError(
+        "The new password can't be the same as the previous one"
+      );
+    }
+
+    if (newPassword !== confirmPassword) {
+      setNewPasswordError("New password and confirm password don't match.");
+    }
+
+    if (existingPasswordError || newPasswordError || confirmPasswordError) {
+      return;
+    }
+
+    // Update password and other data
+    setExistingPassword(newPassword);
 
     // Reset edit states
     setNameEditing(false);
     setSurnameEditing(false);
     setEmailEditing(false);
     setAddressEditing(false);
-    setPasswordEditing(false);
+    // setPasswordEditing(false);
+    // setNewPasswordEditing(false);
+    // setConfirmPasswordEditing(false);
     setSubmitted(true);
   };
 
@@ -60,14 +97,13 @@ const Contact = () => {
     setSurname("Parker");
     setEmail("kate@example.com");
     setAddress("Abbey Road 45, London, UK");
-    setPassword("********");
+    // setPassword(newPassword);
 
     // Reset edit states
     setNameEditing(false);
     setSurnameEditing(false);
     setEmailEditing(false);
     setAddressEditing(false);
-    setPasswordEditing(false);
   };
 
   return (
@@ -120,13 +156,40 @@ const Contact = () => {
         <label>Password</label>
         <input
           type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={existingPassword}
+          onChange={(e) => setExistingPassword(e.target.value)}
           onClick={handlePasswordClick}
           readOnly={!passwordEditing}
-          required
         />
         <br />
+
+        <label>New Password</label>
+        <input
+          type="password"
+          value={newPassword}
+          onChange={(e) => setNewPassword(e.target.value)}
+          onClick={handleNewPasswordClick}
+          readOnly={!newPasswordEditing}
+        />
+        <br />
+
+        <label>Confirm Password</label>
+        <input
+          type="password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          onClick={handleConfirmPasswordClick}
+          readOnly={!confirmPasswordEditing}
+        />
+        <br />
+
+        {existingPasswordError && (
+          <p className="error">{existingPasswordError}</p>
+        )}
+        {newPasswordError && <p className="error">{newPasswordError}</p>}
+        {confirmPasswordError && (
+          <p className="error">{confirmPasswordError}</p>
+        )}
 
         <button type="submit">Submit</button>
         <button type="button" onClick={handleCancel}>
