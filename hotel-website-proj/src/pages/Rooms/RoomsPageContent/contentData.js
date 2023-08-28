@@ -1,6 +1,6 @@
-import singleRoom from "../../../../assets/images/pages/Rooms/single.jpg";
-import doubleRoom from "../../../../assets/images/pages/Rooms/double.jpg";
-import twinRoom from "../../../../assets/images/pages/Rooms/twin.jpg";
+import singleRoom from "../../../assets/images/pages/Rooms/single.jpg";
+import doubleRoom from "../../../assets/images/pages/Rooms/double.jpg";
+import twinRoom from "../../../assets/images/pages/Rooms/twin.jpg";
 
 const contentData = [
   {
