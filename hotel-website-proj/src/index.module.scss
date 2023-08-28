@@ -104,6 +104,7 @@ $font-color-dark: rgba(20, 39, 74, 1);
 @mixin text-Montserrat-white-60 {
   font-family: $font-family-Mont;
   font-size: 60px;
+  font-weight: 700;
   color: $font-color-white;
   @include breakpoint(md) {
     font-size: 30px;

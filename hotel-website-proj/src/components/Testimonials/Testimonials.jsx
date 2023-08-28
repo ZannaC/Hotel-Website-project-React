@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import testimonialsData from "./testimonialsData";
 import TestimonialsStyle from "./Testimonials.module.scss";
-import ScrollBtn from "../../../../components/ui/ScrollBtn/ScrollBtn";
+import ScrollBtn from "../ui/ScrollBtn/ScrollBtn";
 
 const Testimonials = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);

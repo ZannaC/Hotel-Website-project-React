@@ -1,0 +1,14 @@
+@import "../../../index.module.scss";
+
+.Btn {
+  button {
+    box-sizing: border-box;
+    width: 51px;
+    height: 51px;
+    background-color: rgba(224, 185, 115, 1);
+    border-radius: 50%;
+    @include flex-center;
+    @include text-Montserrat-white-50;
+    margin-right: 40px;
+  }
+}

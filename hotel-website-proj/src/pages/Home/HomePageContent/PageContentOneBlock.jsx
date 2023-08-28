@@ -1,5 +1,5 @@
 import React from "react";
-import ExploreBtn from "../../../../components/ui/ExploreBtn/ExploreBtn";
+import ExploreBtn from "../../../components/ui/ExploreBtn/ExploreBtn";
 import ContentOneBlockStyle from "./PageContentOneBlock.module.scss";
 
 const PageContentOneBlock = ({ theme, info, image }) => {

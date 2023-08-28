@@ -1,8 +1,8 @@
 import ExploreBtnStyle from "../../../components/ui/ExploreBtn/ExploreBtn.module.scss";
 
-const ExploreBtn = () => (
+const ExploreBtn = ({ btnText }) => (
   <button type="button" className={ExploreBtnStyle.exploreBtn}>
-    EXPLORE
+    {btnText}
   </button>
 );
 export default ExploreBtn;
