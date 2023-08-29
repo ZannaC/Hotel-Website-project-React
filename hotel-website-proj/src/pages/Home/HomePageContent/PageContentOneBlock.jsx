@@ -13,7 +13,7 @@ const PageContentOneBlock = ({ theme, info, image }) => {
         <h2>{theme}</h2>
         <h3>{info}</h3>
         <form action="https://www.w3schools.com" target="blank">
-          <ExploreBtn />
+          <ExploreBtn btnText="EXPLORE" />
         </form>
       </div>
       <div
