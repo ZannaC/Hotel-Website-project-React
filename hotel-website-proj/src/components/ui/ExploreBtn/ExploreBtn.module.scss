@@ -8,8 +8,8 @@
   border-radius: 0.62rem;
   border: none;
   background: rgba(224, 185, 115, 1);
-  @include text-Montserrat-white-20;
-
+  font-weight: 700;
+  @include text-Montserrat-white-25;
   cursor: pointer;
 
   &:hover {

@@ -12,6 +12,7 @@
     align-items: flex-start;
     padding-left: 6.2%;
     padding-right: 14.4%;
+    border-left: 2px solid rgba(20, 39, 74, 1);
 
     h2 {
       @include text-Garamond-dark-60;

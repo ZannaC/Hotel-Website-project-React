@@ -10,5 +10,8 @@
     @include flex-center;
     @include text-Montserrat-white-50;
     margin-right: 40px;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

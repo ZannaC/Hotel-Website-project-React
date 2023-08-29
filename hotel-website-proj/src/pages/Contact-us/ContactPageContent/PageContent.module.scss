@@ -1,0 +1,53 @@
+@import "../../../index.module.scss";
+
+.contactForm {
+  width: 570px;
+  max-width: 100%;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  label {
+    @include text-Montserrat-dark-25;
+    padding-bottom: 8px;
+  }
+
+  .input {
+    box-sizing: border-box;
+    @include text-Montserrat-dark-25;
+    padding-left: 10px;
+    max-width: 570px;
+    height: 78px;
+    border: 2px solid rgba(20, 39, 74, 0.5);
+  }
+
+  .inputMessage {
+    @include text-Montserrat-dark-25;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    text-align: start;
+    max-width: 570px;
+    height: 352px;
+    border: 2px solid rgba(20, 39, 74, 0.5);
+  }
+
+  .submitBtn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 52px;
+
+    button {
+      width: 145px;
+      height: 78px;
+    }
+  }
+
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+}
