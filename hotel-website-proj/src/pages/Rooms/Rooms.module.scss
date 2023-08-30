@@ -5,7 +5,8 @@
   box-sizing: border-box;
   background-image: url("../../assets/images/pages/Rooms/RoomsPageBackground.jpg");
   background-size: cover;
-  background-position: center center;
+  margin: 0 auto;
+
   &::after {
     content: "";
     position: absolute;

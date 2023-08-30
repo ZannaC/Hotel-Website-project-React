@@ -3,22 +3,10 @@
 .background {
   max-width: 1920px;
   height: 465px;
-  // position: relative;
-  // z-index: 1;
-  // box-sizing: border-box;
+  margin: 0 auto;
   background-color: rgba(20, 39, 74, 1);
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: rgba(20, 39, 74, 0.5);
-  //   z-index: -1;
-  // }
 }
+
 .title {
   padding-top: 47px;
   @include flex-center;
@@ -27,34 +15,57 @@
 }
 
 .text {
-  padding-top: 261px;
-  padding-right: 202px;
-  padding-left: 202px;
+  width: 1510px;
+  max-width: 100%;
+  padding-top: 13.6%;
+  margin: 0 auto;
 
   h2 {
     @include text-Garamond-dark-60;
     padding-bottom: 6px;
+    @include breakpoint(xl) {
+      text-align: center;
+    }
   }
 
   h4 {
     @include text-Montserrat-dark-30;
+    @include breakpoint(xl) {
+      text-align: justify;
+    }
+  }
+  @include breakpoint(xl) {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 .infoContactBlock {
+  max-width: 1510px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 167px;
-  padding-left: 202px;
-  padding-right: 202px;
-  padding-bottom: 463px;
+  padding-top: 8.7%;
+  padding-bottom: 24.1%;
+  @include breakpoint(xl) {
+    padding-left: 2%;
+    padding-right: 2%;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include breakpoint(md) {
+    padding-bottom: 0%;
+  }
 }
 
 .info {
   @include text-Montserrat-dark-40;
   width: 653px;
   max-width: 100%;
-  height: 351px;
+  height: auto;
+  @include breakpoint(sm) {
+    max-width: 80%;
+  }
 }
 
 .arrowImage {
@@ -62,5 +73,8 @@
   vertical-align: middle;
   &:hover {
     transform: scale(1.05);
+  }
+  @include breakpoint(sm) {
+    width: 10%;
   }
 }

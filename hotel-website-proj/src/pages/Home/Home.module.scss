@@ -6,6 +6,7 @@
   background-image: url("../../assets/images/pages/Home/HomePageBackground.jpg");
   background-size: cover;
   background-position: center center;
+  margin: 0 auto;
   &::after {
     content: "";
     position: absolute;

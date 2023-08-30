@@ -9,5 +9,8 @@
   }
   img {
     padding-right: 10%;
+    @include breakpoint(sm) {
+      padding-right: 5%;
+    }
   }
 }

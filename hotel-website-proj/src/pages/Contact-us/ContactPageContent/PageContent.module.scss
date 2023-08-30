@@ -50,4 +50,10 @@
     color: red;
     margin-top: 5px;
   }
+  @include breakpoint(sm) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    max-width: 100%;
+  }
 }
