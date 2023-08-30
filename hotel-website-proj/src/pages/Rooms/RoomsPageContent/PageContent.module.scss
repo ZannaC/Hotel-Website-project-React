@@ -22,5 +22,10 @@
     padding-top: 1.85%;
     padding-bottom: 5.2%;
     line-height: 35px;
+    @include breakpoint(xl) {
+      text-align: justify;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
   }
 }

@@ -44,6 +44,9 @@
         width: 60%;
         height: auto;
       }
+      @include breakpoint(md) {
+        width: 100%;
+      }
     }
 
     .blockImage {
@@ -54,6 +57,12 @@
       max-width: 1580px;
       height: 1054px;
       max-height: 100%;
+      @include breakpoint(md) {
+        height: 400px;
+      }
+      @include breakpoint(xs) {
+        height: 200px;
+      }
     }
   }
 
@@ -71,6 +80,14 @@
     border-radius: 0px 0px 15px 15px;
     padding-left: 10.5%;
     padding-right: 10.25%;
+    @include breakpoint(md) {
+      border: none;
+    }
+    @include breakpoint(sm) {
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 2%;
+    }
   }
 
   .viewMore {

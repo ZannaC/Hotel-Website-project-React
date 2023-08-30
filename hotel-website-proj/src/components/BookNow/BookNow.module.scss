@@ -24,6 +24,11 @@
   h4 {
     @include text-Montserrat-white-25;
   }
+
+  @include breakpoint(xl) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 .btnScrollBlock {
