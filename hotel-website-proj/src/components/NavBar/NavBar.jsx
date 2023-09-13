@@ -25,6 +25,11 @@ const NavBar = () => (
           Contact Us
         </Link>
       </li>
+      <li>
+        <Link to="/yoga" activeClassName={NavBarStyle.activeLink}>
+          Yoga
+        </Link>
+      </li>
     </ul>
   </div>
 );
