@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 
 const URL =
   "https://rnd.kilohealthservices.com/api/quizzes/products?api_token=d88ab57d-4cbe-4826-b593-2c1b2f8b657f";
+const myURL = "https://api.jsonbin.io/v3/b/65034bcfe4033326cbd7a5b3";
 
 const Yoga = () => {
   const [dailyPrice_6month, setDailyPrice_6month] = useState(0);
@@ -21,6 +22,11 @@ const Yoga = () => {
     useState(0);
 
   const [finalPrice_OneTimePayment, setFinalPrice_OneTimePayment] = useState(0);
+
+  // My API
+  const [kidsYoga, setKidsYoga] = useState(0);
+  const [adultsYoga, setAdultsYoga] = useState(0);
+  const [teachersYoga, setTeachersYoga] = useState(0);
 
   useEffect(() => {
     const fetchDataMonthly = async () => {
@@ -54,30 +60,79 @@ const Yoga = () => {
     fetchDataOneTimePayment();
   }, []);
 
+  // My API
+  useEffect(() => {
+    const fetchDataYOGA = async () => {
+      const result = await fetch(myURL);
+
+      result.json().then((json) => {
+        // console.log(json);
+        setKidsYoga(json.record.record.yoga.kids);
+        setAdultsYoga(json.record.record.yoga.adults);
+        setTeachersYoga(json.record.record.yoga.teachers);
+      });
+    };
+
+    fetchDataYOGA();
+  }, []);
+
   return (
     <div className={YogaStyle.wrapper}>
       <div className={YogaStyle.background}>
         <Header />
       </div>
-      Over 52,147 plans ordered. Get access to your yoga program now!
+      {/* Over 52,147 plans ordered. Get access to your yoga program now! */}
       <div>
-        <p>
-          Choose your plan and get 7 days free trial 6 month plan $
-          {dailyPrice_6month} / month
-        </p>
-        <p>
-          ${finalPrice_6month} ${originalPrice_6month} billed every 6 months
-        </p>
+        <span className={YogaStyle.title}>
+          Choose your plan and get 7 days free trial
+        </span>
+        <ul className={YogaStyle.priceBox}>
+          <li className={YogaStyle.offerPrice}>6 month plan </li>
+          <li>
+            <span className={YogaStyle.coolPrice}>
+              <li> ${dailyPrice_6month} / month</li>
+            </span>
+          </li>
+          <li>
+            <span className={YogaStyle.crossedOut}>${finalPrice_6month} </span>
+            <li>${originalPrice_6month} billed every 6 months</li>
+          </li>
+        </ul>
+        <ul className={YogaStyle.priceBox}>
+          <li className={YogaStyle.offerPrice}>3 month plan </li>
+          <li>
+            <span className={YogaStyle.coolPrice}>
+              <li> ${dailyPrice_OneTimePayment} / month</li>
+            </span>
+          </li>
+          <li>
+            <span className={YogaStyle.crossedOut}>
+              ${finalPrice_OneTimePayment}
+            </span>
+            <li> ${originalPrice_OneTimePayment} billed every 3 months</li>
+          </li>
+        </ul>
       </div>
       <div>
-        <p>
-          Choose your plan and get 7 days free trial 6 month plan $
-          {dailyPrice_OneTimePayment} / month
-        </p>
-        <p>
-          ${finalPrice_OneTimePayment} ${originalPrice_OneTimePayment} billed
-          every 6 months
-        </p>
+        <span className={YogaStyle.title}>Choose your 🧘‍♀️ plan</span>
+        <ul className={YogaStyle.priceBox}>
+          <li className={YogaStyle.offerPriceYoga}>YOGA for KIDS</li>
+          <li>
+            <span className={YogaStyle.coolPrice}>${kidsYoga} / month</span>
+          </li>
+        </ul>
+        <ul className={YogaStyle.priceBox}>
+          <li className={YogaStyle.offerPriceYoga}>YOGA for ADULTS</li>
+          <li>
+            <span className={YogaStyle.coolPrice}>${adultsYoga} / month</span>
+          </li>
+        </ul>
+        <ul className={YogaStyle.priceBox}>
+          <li className={YogaStyle.offerPriceYoga}>YOGA for TEACHERS</li>
+          <li>
+            <span className={YogaStyle.coolPrice}>${teachersYoga} / month</span>
+          </li>
+        </ul>
       </div>
       <Footer />
     </div>

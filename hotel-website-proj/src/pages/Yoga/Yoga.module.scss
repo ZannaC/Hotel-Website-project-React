@@ -1,3 +1,5 @@
+@import "../../index.module.scss";
+
 .background {
   max-width: 1920px;
   position: relative;
@@ -18,4 +20,37 @@
     background-color: rgba(20, 39, 74, 0.5);
     z-index: -1;
   }
+}
+
+.title {
+  @include text-Garamond-dark-60;
+  color: rgba(224, 185, 115, 1);
+}
+
+.priceBox {
+  @include text-Montserrat-dark-25;
+  // text-transform: uppercase;
+  border: 0.2rem solid rgba(224, 185, 115, 1);
+  padding: 1.625rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.offerPrice {
+  @include text-Montserrat-dark-25;
+  text-transform: lowercase;
+}
+
+.offerPriceYoga {
+  @include text-Montserrat-dark-25;
+}
+
+.crossedOut {
+  text-decoration: line-through;
+  color: rgb(120, 101, 65);
+  font-size: 18px;
+}
+
+.coolPrice {
+  @include text-Garamond-dark-60;
 }
