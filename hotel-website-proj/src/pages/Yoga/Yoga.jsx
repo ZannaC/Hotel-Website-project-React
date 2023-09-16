@@ -139,4 +139,53 @@ const Yoga = () => {
   );
 };
 
+let req = new XMLHttpRequest();
+
+req.onreadystatechange = () => {
+  if (req.readyState === XMLHttpRequest.DONE) {
+    if (req.status === 200) {
+      console.log("Data posted successfully:", req.responseText);
+    } else {
+      console.error("Error:", req.status, req.statusText);
+    }
+  }
+};
+
+const apiKey = "$2b$10$QicGxsrGEpmODOSNZP7Tlu5P8nENEG7zNy9kuQ94evxU4HFpIEErW";
+let req1 = new XMLHttpRequest();
+req1.onreadystatechange = () => {
+  if (req1.readyState === XMLHttpRequest.DONE) {
+    console.log(req1.responseText);
+  }
+};
+
+req1.open("PUT", "https://api.jsonbin.io/v3/b/65034bcfe4033326cbd7a5b3", true);
+req1.setRequestHeader("Content-Type", "application/json");
+req1.setRequestHeader("X-Master-Key", apiKey);
+
+const postData1 = {
+  record: {
+    yoga: {
+      product_key: "monthly",
+      kids: 119,
+      adults: 129,
+      teachers: 179,
+    },
+  },
+};
+
+req1.send(JSON.stringify(postData1));
+
+let req2 = new XMLHttpRequest();
+
+req2.onreadystatechange = () => {
+  if (req2.readyState === XMLHttpRequest.DONE) {
+    console.log(req2.responseText);
+  }
+};
+
+req2.open("GET", "https://api.jsonbin.io/v3/b/65034bcfe4033326cbd7a5b3", true);
+req2.setRequestHeader("X-Master-Key", apiKey);
+
+req2.send();
 export default Yoga;
